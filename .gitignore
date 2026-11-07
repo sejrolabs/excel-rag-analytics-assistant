@@ -1,0 +1,81 @@
+# ==============================================================================
+# Environnements virtuels
+# ==============================================================================
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ==============================================================================
+# Bytecode & Caches Python
+# ==============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# ==============================================================================
+# Tests, Couverture & Typage
+# ==============================================================================
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# ==============================================================================
+# Données locales & Sensibles
+# ==============================================================================
+# Fichiers d'environnement et secrets
+.env
+.env.local
+.env.*.local
+.streamlit/secrets.toml
+
+# Bases de données & Stockage DuckDB
+*.duckdb
+*.duckdb.wal
+
+# Stockage vectoriel Qdrant local
+data/processed/qdrant/
+
+# Fichiers bruts & traités (on conserve uniquement les .gitkeep et les samples)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Exclure les fichiers Excel de données
+*.xlsx
+*.xls
+*.csv
+
+# ==============================================================================
+# Caches ML & Modèles
+# ==============================================================================
+.cache/
+hf_cache/
+models/
+
+# ==============================================================================
+# IDEs & Systèmes d'exploitation
+# ==============================================================================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/

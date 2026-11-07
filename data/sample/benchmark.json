@@ -1,0 +1,38 @@
+[
+  {
+    "question": "Combien de transactions au total ?",
+    "intent": "SQL_QUERY"
+  },
+  {
+    "question": "Quel est le montant moyen des transactions ?",
+    "intent": "SQL_QUERY"
+  },
+  {
+    "question": "Donne-moi le top 5 des commerçants par dépenses",
+    "intent": "SQL_QUERY"
+  },
+  {
+    "question": "Trouve les transactions qui parlent d'achats de billets d'avion ou de vacances",
+    "intent": "VECTOR_SEARCH"
+  },
+  {
+    "question": "Cherche les dépenses liées aux abonnements de streaming ou musique",
+    "intent": "VECTOR_SEARCH"
+  },
+  {
+    "question": "Quel est le total dépensé pour les achats de voyages ?",
+    "intent": "HYBRID_SEARCH"
+  },
+  {
+    "question": "Montant cumulé des transactions relatives aux restaurants et cafés",
+    "intent": "HYBRID_SEARCH"
+  },
+  {
+    "question": "Quelles sont les colonnes disponibles dans le fichier ?",
+    "intent": "GENERAL_QUESTION"
+  },
+  {
+    "question": "Quel est le schéma des données importées ?",
+    "intent": "GENERAL_QUESTION"
+  }
+]

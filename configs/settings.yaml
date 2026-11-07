@@ -1,0 +1,22 @@
+data:
+  expected_columns:
+    - transaction_id
+    - customer_id
+    - transaction_date
+    - merchant
+    - category
+    - amount
+    - transaction_type
+    - city
+    - country
+    - payment_method
+    - description
+
+retrieval:
+  top_k: 8
+  dense_weight: 0.6
+  lexical_weight: 0.4
+
+sql:
+  max_rows: 1000
+  timeout_seconds: 10

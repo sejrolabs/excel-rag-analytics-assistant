@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "excel-rag-analytics-assistant"
+version = "0.1.0"
+description = "Hybrid RAG and Text-to-SQL assistant for structured Excel transaction data"
+requires-python = ">=3.11"
+dynamic = ["dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
